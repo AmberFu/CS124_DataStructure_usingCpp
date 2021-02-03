@@ -20,6 +20,24 @@ Upload those 2 files to Canvas  (pdf and tgz)
 
 ![bugClimbPoleUpAndDown](pic/Lab1_BugAnimation.gif)
 
+### How to resize and make transparency image?
+
+1. Download bug.jpg online
+
+2. Resize and transform JPG to PNG:
+
+```
+ $ convert -resize 5% bug.jpg smallBug.png
+```
+
+3. Make image transparency:
+
+```
+convert smallBug.png -fuzz 10% -transparent white smallBug_transparency.png
+```
+
+> Note: Because background is not exactl white, so using `fuzz 10%` to convert almost-white color to transparent color.
+
 ### Source Code:
 
 [demoBug.cpp](https://github.com/AmberFu/CS124_DataStructure_usingCpp/blob/main/Assignments/Lab1_BugAnimation/demoBug.cpp)
@@ -99,7 +117,7 @@ void Bug::down()
 /* Main: */
 int main()
 {
-   Picture picBug("smallBug.png"); // Bug which going up and down.
+   Picture picBug("smallBug_transparency.png"); // Bug which going up and down.
    Picture picPole("halfTreePole.png"); // Background picture: a pole. 
    Bug smallbug(picBug, picPole);
    /* Using tree pole png create this GIF's background */
