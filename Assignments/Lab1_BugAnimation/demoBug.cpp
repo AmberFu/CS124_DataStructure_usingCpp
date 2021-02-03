@@ -71,7 +71,7 @@ void Bug::down()
 
 int main()
 {
-   Picture picBug("smallBug.png"); // Bug which going up and down.
+   Picture picBug("smallBug_transparency.png"); // Bug which going up and down.
    Picture picPole("halfTreePole.png"); // Background picture: a pole. 
    Bug smallbug(picBug, picPole);
    /* Using tree pole png create this GIF's background */
