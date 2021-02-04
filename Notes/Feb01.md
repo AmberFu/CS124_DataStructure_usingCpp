@@ -12,5 +12,9 @@ Note taker: Po-Ying Fu
 
 	* display xxx.png
 
-	* convert -resize 50% xxx.png small-xxx.png
+	* animate ooo.gif
+
+	* convert -resize 50% xxx.jpg xxx_small.png
+
+	* convert xxx_small.png -fuzz 10% -transparent white xxx_small_transparent.png
 
