@@ -77,19 +77,22 @@
 
 		* Create 3 buttoms letting user change position/direction of the images
 
+![win](https://github.com/AmberFu/CS124_DataStructure_usingCpp/blob/main/Assignments/pic/bugGUI_win.png?raw=true)
+
+
 * Creating & Setting Box to hold the images:
 
 	* Name: b
 
 	* Extra Code: 
 
-	```
-	img[0] = new Fl_PNG_Image("bugNorth.png");
-	img[1] = new Fl_PNG_Image("bugEast.png");
-	img[2] = new Fl_PNG_Image("bugSouth.png");
-	img[3] = new Fl_PNG_Image("bugWest.png");
+```
+img[0] = new Fl_PNG_Image("bugNorth.png");
+img[1] = new Fl_PNG_Image("bugEast.png");
+img[2] = new Fl_PNG_Image("bugSouth.png");
+img[3] = new Fl_PNG_Image("bugWest.png");
 
-	```
+```
 
 ![boxGUI_b](https://github.com/AmberFu/CS124_DataStructure_usingCpp/blob/main/Assignments/pic/bugGUI_b.png?raw=true)
 
