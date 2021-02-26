@@ -55,11 +55,11 @@
 > 	* login to sync: xhost + && vflogin ACCOUNT
 >
 
-* Right click mouse in JSLinux, then choose "FLDev"
+1. Right click mouse in JSLinux, then choose "FLDev"
 
-* Create bugGUI.fl file by using FLDev interface:
+2. Create bugGUI.fl file by using FLDev interface:
 
-	![bugGUI.fl](https://github.com/AmberFu/CS124_DataStructure_usingCpp/blob/main/Assignments/pic/bugGUI_FL.png?raw=true)
+![bugGUI.fl](https://github.com/AmberFu/CS124_DataStructure_usingCpp/blob/main/Assignments/pic/bugGUI_FL.png?raw=true)
 
 	* Create Declaretion:
 
@@ -80,13 +80,13 @@
 ![win](https://github.com/AmberFu/CS124_DataStructure_usingCpp/blob/main/Assignments/pic/bugGUI_win.png?raw=true)
 
 
-* Creating & Setting Box to hold the images:
+3. Creating & Setting Box to hold the images:
 
 	* Name: b
 
 	* Extra Code: 
 
-```
+```cpp
 img[0] = new Fl_PNG_Image("bugNorth.png");
 img[1] = new Fl_PNG_Image("bugEast.png");
 img[2] = new Fl_PNG_Image("bugSouth.png");
@@ -96,11 +96,11 @@ img[3] = new Fl_PNG_Image("bugWest.png");
 
 ![boxGUI_b](https://github.com/AmberFu/CS124_DataStructure_usingCpp/blob/main/Assignments/pic/bugGUI_b.png?raw=true)
 
-* Creating & Setting each buttom: 
+4. Creating & Setting each buttom: 
 
 	* MOVE: move one unit follow by direction.
 
-```
+```cpp
 bug.move();
 b->position(bug.get_row(),bug.get_column());
 b->image(img[bug.get_direction()]);
@@ -111,7 +111,7 @@ win->redraw();
 
 	* TURN: turn right for each click.
 
-```
+```cpp
 bug.trun_right();
 b->image(img[bug.get_direction()]);
 win->redraw();
@@ -121,7 +121,7 @@ win->redraw();
 
 	* PATH: follow the path to the end point.
 
-```
+```cpp
 bug.path();
 b->image(img[bug.get_direction()]);
 b->position(bug.get_row(),bug.get_column());
