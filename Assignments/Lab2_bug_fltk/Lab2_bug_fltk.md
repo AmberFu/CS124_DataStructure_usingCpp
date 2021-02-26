@@ -44,6 +44,11 @@
 
 ----------
 
+## Demo:
+
+![bugGUI](https://github.com/AmberFu/CS124_DataStructure_usingCpp/blob/main/Assignments/video/bug.mp4)
+
+----------
 ## How to create 4 images facing in the four directions (N,E,S,W)
 
 	`$ convert bugN.png -rotate 90 bugE.png`
