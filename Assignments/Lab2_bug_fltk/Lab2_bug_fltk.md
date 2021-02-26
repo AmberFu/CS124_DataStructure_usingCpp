@@ -1,5 +1,12 @@
 # Lab2 - FLTK
 
+## Demo:
+
+<video width="300" height="200" controls>
+  <source src="https://github.com/AmberFu/CS124_DataStructure_usingCpp/blob/main/Assignments/video/bug.mp4" type="video/mp4">
+</video>
+
+
 ## Describe assignment:
 
 #### Use FLTK/FLUID to demonstrate control of a small image (e.g. bug)
@@ -44,11 +51,6 @@
 
 ----------
 
-## Demo:
-
-![bugGUI](https://github.com/AmberFu/CS124_DataStructure_usingCpp/blob/main/Assignments/video/bug.mp4)
-
-----------
 ## How to create 4 images facing in the four directions (N,E,S,W)
 
 	`$ convert bugN.png -rotate 90 bugE.png`
