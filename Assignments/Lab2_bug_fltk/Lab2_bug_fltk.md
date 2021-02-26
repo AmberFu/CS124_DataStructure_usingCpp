@@ -6,10 +6,9 @@
 
 * Lab goals: Explore the use of constructors and a array of object pointers
 
-```
-* Loading the image (read section 9.6)
-
-	* Buttons to allow user to make image move, turn, and/or follow a path.
+> * Loading the image (read section 9.6)
+>
+>	* Buttons to allow user to make image move, turn, and/or follow a path.
 	
 	* Add default contructor to class to set initial position and direction
 
