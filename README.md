@@ -8,3 +8,6 @@ Text book: Big C++: Late Objects, Cay S. Horstmann (3rd Edition)
 
 [Lab 01] [Bug Animation](https://github.com/AmberFu/CS124_DataStructure_usingCpp/blob/main/Assignments/Lab1_Bug_Animation.md)
 
+[Lab 02] [Bug GUI](https://github.com/AmberFu/CS124_DataStructure_usingCpp/blob/main/Assignments/Lab2_bug_fltk.md)
+
+
