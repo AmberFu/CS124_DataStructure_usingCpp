@@ -276,7 +276,11 @@ void Bug::path()
 
 	```$ g++ bug.cpp bugGUI.cxx -o bug -lfltk -lXext -lX11 -lm```
 
-	OR use: `$ g++ bugGUI.cxx bug.cpp -o bug \`fltk-config --cxxflags --ldflags --use-images\``
+	OR use:
+	
+	```
+	$ g++ bugGUI.cxx bug.cpp -o bug `fltk-config --cxxflags --ldflags --use-images`
+	```
 
 * test program: 
 
