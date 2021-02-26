@@ -6,6 +6,7 @@
 
 * Lab goals: Explore the use of constructors and a array of object pointers
 
+```
 * Loading the image (read section 9.6)
 
 	* Buttons to allow user to make image move, turn, and/or follow a path.
@@ -41,6 +42,7 @@
 	* Each click of the path button reads next character from string
 
 	* Use local variable to remember last character processed
+```
 
 ## How to create 4 images facing in the four directions (N,E,S,W)
 
