@@ -8,39 +8,39 @@
 
 * Loading the image (read section 9.6)
 
-	Buttons to allow user to make image move, turn, and/or follow a path.
+	* Buttons to allow user to make image move, turn, and/or follow a path.
 	
-	Add default contructor to class to set initial position and direction
+	* Add default contructor to class to set initial position and direction
 
-	Declare/define a global object to place in FLTK Box
+	* Declare/define a global object to place in FLTK Box
 
-	Instead of storing image data directly in executable, load from png file
+	* Instead of storing image data directly in executable, load from png file
 
 * Array of ojects (read section 9.10)
 	
-	Create 4 images facing in the four directions (N,E,S,W)
+	* Create 4 images facing in the four directions (N,E,S,W)
 
-	Create array to hold pointers to these images
+	* Create array to hold pointers to these images
 
-	Copies of images are not allowed (read section 13.5)
+	* Copies of images are not allowed (read section 13.5)
 
 * Turning the image
 
-	In the "turn" button callback, cycle through the 4 images
+	* In the "turn" button callback, cycle through the 4 images
 
-	Redraw the parent (window) after each
+	* Redraw the parent (window) after each
 
-	Use local static variable which will remember its previous value
+	* Use local static variable which will remember its previous value
 
-	Sequencing the path of image
+	* equencing the path of image
 
 * Create button to walk the image through some predetermined path
 
-	Create array of characters such as "mmt" that means "move, move, turn"
+	* Create array of characters such as "mmt" that means "move, move, turn"
 
-	Each click of the path button reads next character from string
+	* Each click of the path button reads next character from string
 
-	Use local variable to remember last character processed
+	* Use local variable to remember last character processed
 
 ## How to create 4 images facing in the four directions (N,E,S,W)
 
