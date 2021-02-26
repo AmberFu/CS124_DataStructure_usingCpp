@@ -2,7 +2,7 @@
 
 ## Describe assignment:
 
-### Use FLTK/FLUID to demonstrate control of a small image (e.g. bug)
+#### Use FLTK/FLUID to demonstrate control of a small image (e.g. bug)
 
 **Lab goals**: Explore the use of constructors and a array of object pointers
 
