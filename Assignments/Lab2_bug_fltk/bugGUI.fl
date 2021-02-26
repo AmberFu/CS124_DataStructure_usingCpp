@@ -1,0 +1,62 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0305
+header_name {.h}
+code_name {.cxx}
+decl {\#include <iostream>} {public global
+}
+
+decl {\#include "bug.h"} {public global
+}
+
+decl {\#include <FL/Fl_PNG_Image.H>} {public global
+}
+
+decl {Fl_PNG_Image* img[4];} {public global
+}
+
+decl {Bug bug;} {public global
+}
+
+Function {} {open
+} {
+  code {printf("Program Start...\\n");} {}
+  Fl_Window win {open selected
+    xywh {873 25 300 200} type Double
+    code0 {b->image(img[bug.get_direction()]);} visible
+  } {
+    Fl_Button {} {
+      label Move
+      callback {bug.move();
+b->position(bug.get_row(),bug.get_column());
+b->image(img[bug.get_direction()]);
+win->redraw();}
+      xywh {250 5 45 25}
+    }
+    Fl_Button {} {
+      label Turn
+      callback {bug.trun_right();
+b->image(img[bug.get_direction()]);
+win->redraw();}
+      xywh {250 30 45 25}
+    }
+    Fl_Button {} {
+      label Path
+      callback {bug.path();
+b->image(img[bug.get_direction()]);
+b->position(bug.get_row(),bug.get_column());
+win->redraw();}
+      xywh {250 55 45 25}
+    }
+    Fl_Box b {
+      xywh {0 0 40 40}
+      code0 {img[0] = new Fl_PNG_Image("bugNorth.png");}
+      code1 {img[1] = new Fl_PNG_Image("bugEast.png");}
+      code2 {img[2] = new Fl_PNG_Image("bugSouth.png");}
+      code3 {img[3] = new Fl_PNG_Image("bugWest.png");}
+    }
+    Fl_Box {} {
+      label x
+      xywh {160 110 25 25}
+    }
+  }
+}
