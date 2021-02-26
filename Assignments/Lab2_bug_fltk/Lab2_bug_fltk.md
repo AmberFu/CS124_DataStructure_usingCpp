@@ -86,48 +86,22 @@
 
 	* Extra Code: 
 
-```cpp
-img[0] = new Fl_PNG_Image("bugNorth.png");
-img[1] = new Fl_PNG_Image("bugEast.png");
-img[2] = new Fl_PNG_Image("bugSouth.png");
-img[3] = new Fl_PNG_Image("bugWest.png");
 
-```
-
-![boxGUI_b](https://github.com/AmberFu/CS124_DataStructure_usingCpp/blob/main/Assignments/pic/bugGUI_b.png?raw=true)
+	![boxGUI_b](https://github.com/AmberFu/CS124_DataStructure_usingCpp/blob/main/Assignments/pic/bugGUI_b.png?raw=true)
 
 4. Creating & Setting each buttom: 
 
 	* MOVE: move one unit follow by direction.
 
-```cpp
-bug.move();
-b->position(bug.get_row(),bug.get_column());
-b->image(img[bug.get_direction()]);
-win->redraw();
-```
-
-![bugGUI_move](https://github.com/AmberFu/CS124_DataStructure_usingCpp/blob/main/Assignments/pic/bugGUI_move.png?raw=true)
+	![bugGUI_move](https://github.com/AmberFu/CS124_DataStructure_usingCpp/blob/main/Assignments/pic/bugGUI_move.png?raw=true)
 
 	* TURN: turn right for each click.
-
-```cpp
-bug.trun_right();
-b->image(img[bug.get_direction()]);
-win->redraw();
-```
 	
-![bugGUI_move](https://github.com/AmberFu/CS124_DataStructure_usingCpp/blob/main/Assignments/pic/bugGUI_turn.png?raw=true)
+	![bugGUI_move](https://github.com/AmberFu/CS124_DataStructure_usingCpp/blob/main/Assignments/pic/bugGUI_turn.png?raw=true)
 
 	* PATH: follow the path to the end point.
 
-```cpp
-bug.path();
-b->image(img[bug.get_direction()]);
-b->position(bug.get_row(),bug.get_column());
-win->redraw();
-```
-![bugGUI_path](https://github.com/AmberFu/CS124_DataStructure_usingCpp/blob/main/Assignments/pic/bugGUI_path.png?raw=true)
+	![bugGUI_path](https://github.com/AmberFu/CS124_DataStructure_usingCpp/blob/main/Assignments/pic/bugGUI_path.png?raw=true)
 
 ## Create bug.cpp and bug.h:
 
